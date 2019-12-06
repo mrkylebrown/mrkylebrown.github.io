@@ -1,5 +1,6 @@
 body {
-  	background-color:  dimgrey;
+  	background: rgb(127,134,136);
+background: linear-gradient(90deg, rgba(127,134,136,1) 12%, rgba(146,157,158,1) 100%);
  	width: 90%;
 	margin: auto;
 	align-content: center;
@@ -7,36 +8,48 @@ body {
 }
 /* Style the header */
 .header {
-  background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
+color:#C8C8C8;
+
 }
 
 /* Style the top navigation bar */
 .topnav {
+	
   overflow: hidden;
-  background-color: #333;
+  background-color: transparent;
+	border-color: #C8C8C8;
+	border-style: double;
+	border-radius: 10px
+	
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #aa9b9b;
+  color: #C8C8C8;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration:none;
+	
+
+
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #F3E367;
   color: black;
+	border-radius: 5px;
 }
 .cal {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+padding-top: 40px;
+	border-radius: 10px;
 
 		
  
@@ -47,4 +60,12 @@ body {
 	position:relative; 
 	display:block; 
 	width: 100%
+}
+
+.email {
+	text-align: right
+}
+
+h1 {
+	font-size: 4em
 }
