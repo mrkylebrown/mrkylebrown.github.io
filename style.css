@@ -1,7 +1,9 @@
 body {
-  background-color:  dimgrey;
- 
-  margin: 80px;
+  	background-color:  dimgrey;
+ 	width: 90%;
+	margin: auto;
+	align-content: center;
+
 }
 /* Style the header */
 .header {
