@@ -67,7 +67,7 @@ padding-top: 40px;
 
 .email {
 	text-align: right;
-	color: #F3E367;
+	
 }
 
 h1 {
@@ -87,4 +87,11 @@ p {
 	margin-top: 60px;
 	font-size: 1.2em;
 	color: #E2E3D8;
+	padding-left: 7%;
+	padding-right: 7%;
+	text-align: justify
+}
+
+.material-icons {
+	float: right
 }
