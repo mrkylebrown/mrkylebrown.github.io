@@ -10,7 +10,7 @@ background: linear-gradient(90deg, rgba(127,134,136,1) 12%, rgba(146,157,158,1) 
 .header {
   padding: 10px;
   text-align: center;
-color:#C8C8C8;
+color:#E2E3D8;
 
 }
 
@@ -19,8 +19,9 @@ color:#C8C8C8;
 	
   overflow: hidden;
   background-color: transparent;
-	border-color: #C8C8C8;
-	border-style: double;
+	border-color: #D0D1C7;
+	border-style:solid;
+	border-width:thick;
 	border-radius: 10px
 	
 }
@@ -29,10 +30,12 @@ color:#C8C8C8;
 .topnav a {
   float: left;
   display: block;
-  color: #C8C8C8;
+  color: #E2E3D8;
   text-align: center;
   padding: 14px 16px;
   text-decoration:none;
+	font-weight: bold;
+	font-size: 1.3em
 	
 
 
@@ -63,9 +66,25 @@ padding-top: 40px;
 }
 
 .email {
-	text-align: right
+	text-align: right;
+	color: #F3E367;
 }
 
 h1 {
 	font-size: 4em
+}
+
+img {
+	
+}
+
+#panther {
+	float: left;
+	width: 10%
+}
+
+p {
+	margin-top: 60px;
+	font-size: 1.2em;
+	color: #E2E3D8;
 }
