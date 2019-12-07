@@ -16,7 +16,7 @@
 	  <a href= "mailto:kyle.brown@wolfcreek.ab.ca">
    <i class="material-icons" style="font-size:36px;color:#5A5B58">email</i>
 		  </a>
-	  <h1>Mr. Brown's Website</h1>
+	  <h1 id="Site Title">Mr. Brown's Website</h1>
 	 
   </div>
 
@@ -40,5 +40,15 @@ I hope you have a wonderful year!</p>
 	
 	
 </body>
-
+<script>
+	var clickEl = document.getElementById("Site Title");
+	
+	var whenClicked = function() {
+		clickEl.innerHTML = "Mr. Brown's New Website";
+	}
+	
+	clickEl.addEventListener("click",whenClicked);
+	
+	
+	</script>
 </html>
