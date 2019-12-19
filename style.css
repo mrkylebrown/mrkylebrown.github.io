@@ -10,8 +10,15 @@ background: linear-gradient(90deg, rgba(127,134,136,1) 12%, rgba(146,157,158,1) 
 .header {
   padding: 10px;
   text-align: center;
-color:#E2E3D8;
+  color:#E2E3D8;
+	
 
+}
+
+
+#panther {
+	float: left;
+	width: 10%
 }
 
 /* Style the top navigation bar */
@@ -54,8 +61,7 @@ color:#E2E3D8;
 padding-top: 40px;
 	border-radius: 10px;
 
-		
- 
+	
 }
 
 #container {
@@ -74,14 +80,6 @@ h1 {
 	font-size: 4em
 }
 
-img {
-	
-}
-
-#panther {
-	float: left;
-	width: 10%
-}
 
 p {
 	margin-top: 60px;
@@ -95,3 +93,7 @@ p {
 .material-icons {
 	float: right
 }
+
+
+
+

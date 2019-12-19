@@ -40,15 +40,10 @@ I hope you have a wonderful year!</p>
 	
 	
 </body>
-<script>
-	var clickEl = document.getElementById("Site Title");
-	
-	var whenClicked = function() {
-		clickEl.innerHTML = "Mr. Brown's New Website";
-	}
-	
-	clickEl.addEventListener("click",whenClicked);
-	
-	
+<script src="jquery-3.4.1.min.js"></script>
+	<script>
+	$("h1").on("click", function() {
+		console.log("hey what's up?")
+	})
 	</script>
 </html>
