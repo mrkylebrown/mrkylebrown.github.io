@@ -1,34 +1,40 @@
 body {
-  	background: rgb(127,134,136);
-background: linear-gradient(90deg, rgba(127,134,136,1) 12%, rgba(146,157,158,1) 100%);
+
+	background-image: url("Images/Math-Mathematics-Formula-Wallpaper-for-PC.jpg");
  	width: 90%;
 	margin: auto;
 	align-content: center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
 
 }
 /* Style the header */
-.header {
-  padding: 10px;
-  text-align: center;
-  color:#E2E3D8;
+div.header {
+  	padding: 2px;
+	margin-bottom: 15px;
+  	text-align: center;
+	border: solid;
+	border-radius: 10px;
+	background-color:rgba(163,163,173,0.9);
 	
-
 }
+
 
 
 #panther {
 	float: left;
-	width: 10%
+	width: 10%;
+	opacity: 0.7;
+	border-radius: 5px;
 }
 
 /* Style the top navigation bar */
 .topnav {
 	
   overflow: hidden;
-  background-color: transparent;
-	border-color: #D0D1C7;
+  background-color:rgba(50,50,50,1);
+	
 	border-style:solid;
-	border-width:thick;
+	
 	border-radius: 10px
 	
 }
@@ -37,7 +43,7 @@ background: linear-gradient(90deg, rgba(127,134,136,1) 12%, rgba(146,157,158,1) 
 .topnav a {
   float: left;
   display: block;
-  color: #E2E3D8;
+  color: antiquewhite;
   text-align: center;
   padding: 14px 16px;
   text-decoration:none;
@@ -50,17 +56,15 @@ background: linear-gradient(90deg, rgba(127,134,136,1) 12%, rgba(146,157,158,1) 
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #F3E367;
-  color: black;
+  	background-color: #4C6EE0;
+  	color: black;
 	border-radius: 5px;
 }
 .cal {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-padding-top: 40px;
+  	position: absolute;
+  	margin-left: auto;
+  	margin-right: auto;
 	border-radius: 10px;
-
 	
 }
 
@@ -82,17 +86,24 @@ h1 {
 
 
 p {
-	margin-top: 60px;
+	margin-top: 20px;
 	font-size: 1.2em;
-	color: #E2E3D8;
+	background-color:rgba(163,163,173,0.9);
 	padding-left: 7%;
 	padding-right: 7%;
-	text-align: justify
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: justify;
+	border-radius: 10px;
+	border-style: solid;
+	
 }
 
 .material-icons {
 	float: right
 }
+
+
 
 
 
