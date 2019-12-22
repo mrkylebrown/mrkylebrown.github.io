@@ -1,11 +1,16 @@
+
 body {
 
 	background-image: url("Images/Math-Mathematics-Formula-Wallpaper-for-PC.jpg");
- 	width: 90%;
+ 	
+	width: 90%;
 	margin: auto;
 	align-content: center;
-	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"
-
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+	
+	
+	
 }
 /* Style the header */
 div.header {
@@ -18,8 +23,6 @@ div.header {
 	
 }
 
-
-
 #panther {
 	float: left;
 	width: 10%;
@@ -30,28 +33,23 @@ div.header {
 /* Style the top navigation bar */
 .topnav {
 	
-  overflow: hidden;
-  background-color:rgba(50,50,50,1);
-	
+  	overflow: hidden;
+  	background-color:rgba(50,50,50,1);
 	border-style:solid;
-	
 	border-radius: 10px
 	
 }
 
 /* Style the topnav links */
 .topnav a {
-  float: left;
-  display: block;
-  color: antiquewhite;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration:none;
+  	float: left;
+  	display: block;
+  	color: lavenderblush;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration:none;
 	font-weight: bold;
 	font-size: 1.3em
-	
-
-
 }
 
 /* Change color on hover */
@@ -81,14 +79,14 @@ div.header {
 }
 
 h1 {
-	font-size: 4em
+	font-size: 3.5em
 }
 
 
 p {
 	margin-top: 20px;
 	font-size: 1.2em;
-	background-color:rgba(163,163,173,0.9);
+	background-color:lavenderblush;
 	padding-left: 7%;
 	padding-right: 7%;
 	padding-top: 1%;
@@ -102,6 +100,7 @@ p {
 .material-icons {
 	float: right
 }
+
 
 
 
