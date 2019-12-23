@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
 
 body {
 
 	background-image: url("Images/Math-Mathematics-Formula-Wallpaper-for-PC.jpg");
- 	
+	background-attachment:fixed;
 	width: 90%;
 	margin: auto;
 	align-content: center;
-	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-	
-	
-	
+	font-family: "montserrat"
 	
 }
 /* Style the header */
-div.header {
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   	padding: 2px;
 	margin-bottom: 15px;
   	text-align: center;
@@ -32,16 +34,26 @@ div.header {
 
 /* Style the top navigation bar */
 .topnav {
-	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   	overflow: hidden;
   	background-color:rgba(50,50,50,1);
 	border-style:solid;
-	border-radius: 10px
+	border-radius: 10px;
+	
 	
 }
 
+.topnav li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
 /* Style the topnav links */
-.topnav a {
+.topnav li a {
+	transition: all 0.3s ease 0s;
+	list-style: none;
   	float: left;
   	display: block;
   	color: lavenderblush;
@@ -53,8 +65,9 @@ div.header {
 }
 
 /* Change color on hover */
-.topnav a:hover {
-  	background-color: #4C6EE0;
+.topnav li a:hover {
+	
+  	background-color: #0088a9;
   	color: black;
 	border-radius: 5px;
 }
@@ -63,6 +76,7 @@ div.header {
   	margin-left: auto;
   	margin-right: auto;
 	border-radius: 10px;
+	
 	
 }
 
@@ -79,7 +93,9 @@ div.header {
 }
 
 h1 {
-	font-size: 3.5em
+	font-size: 3.5em;
+	cursor: pointer;
+		
 }
 
 
