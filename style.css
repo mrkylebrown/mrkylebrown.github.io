@@ -37,7 +37,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  	overflow: hidden;
+  	overflow:auto;
   	background-color:rgba(50,50,50,1);
 	border-style:solid;
 	border-radius: 10px;
