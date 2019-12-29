@@ -7,12 +7,12 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
 </head>
 
 <body>
-	
-	<header>
-		  <div class="header" data-parallax="scroll" data-image-src="Images/Math-Mathematics-Formula-Wallpaper-for-PC.jpg">
+		<header>
+		  <div class="header">
 	  <img id="panther" src="panther.png" alt="panther image">
 	  <h1 id="Site Title">Mr. Brown's Website</h1>
 	  <a href= "mailto:kyle.brown@wolfcreek.ab.ca">
@@ -20,16 +20,29 @@
 		  </a>
   </div>
 	</header>
-		
-
+	<!-- Nav Bar -->
   <nav>
-    <ul class="topnav">
-	 <li><a href="Math9.html">Math 9</a></li>
-    <li><a href="#">Math 10 Courses</a></li>
-    <li><a href="#">Math 11 Courses</a></li>
-    <li><a href="#">Math 12 Courses</a></li>
-    <li><a href="#">Physics Courses</a></li>
-	  </ul>
+	  
+    <ul class="main">
+		<li><a href="#">Math 9</a>
+			<ul class="sub">
+				<li><a href="#">Calendar</a></li>
+				<li><a href="#">The Course</a></li>
+				<li><a href="#">Unit 1</a></li>
+			</ul>
+		</li>			
+		<li><a href="#">Math 10 Courses</a>
+		<ul class="sub">
+				<li><a href="#">Calendar</a></li>
+				<li><a href="#">The Course</a></li>
+				<li><a href="#">Unit 1</a></li>
+			</ul>
+		</li>	
+		
+    	<li><a href="#">Math 11 Courses</a></li>
+    	<li><a href="#">Math 12 Courses</a></li>
+    	<li><a href="#">Physics Courses</a></li>
+	 </ul>
 	  
   </nav>
 	
@@ -53,5 +66,21 @@ I hope you have a wonderful year!</p>
 		console.log("Mr. Brown was clicked");
 		$("h1").html("Mr. Brown's <i>New</i> Website!");
 	})
+	</script>
+	<script>
+		$(function(){
+        $(".main li").hover(
+            function(){
+                //$('ul.sub', this).slideDown(500);
+                //$('>ul.sub', this).slideDown(500);
+                $('>ul.sub:not(:animated)', this).slideDown(500);
+            },
+            function(){
+                //$('ul.sub',this).slideUp(300);
+                $('>ul.sub',this).slideUp(300);
+            }
+        );
+    });
+	
 	</script>
 </html>
