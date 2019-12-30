@@ -1,162 +1,151 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
-
-
 body {
-
-	background-image: url("Images/Math-Mathematics-Formula-Wallpaper-for-PC.jpg");
-	background-attachment:fixed;
-	width: 90%;
-	margin: auto;
-	align-content: center;
-	font-family: "montserrat"
+  background-image: url("Images/Math-Mathematics-Formula-Wallpaper-for-PC.jpg");
+  background-attachment: fixed;
+  width: 90%;
+  margin: auto;
+  align-content: center;
+  font-family: "montserrat"
 }
-
-
 /* Style the top navigation bar */
 nav {
-  	width: 100%;
-	height: 60px;
-  	background-color:rgba(50,50,50,1);
-	border-style:solid;
-	border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(50, 50, 50, 1);
+  border-style: solid;
+  border-radius: 10px;
 }
-
 nav ul {
-	float: left;
-	position: absolute;
-	z-index: 999;
-	padding: 0px;
-	margin: 0px;
-	border-style:none;
-	border-radius: 10px;
-	background-color:rgba(50,50,50,1);
-	
+  float: left;
+  position: absolute;
+  z-index: 999;
+  padding: 0px;
+  margin: 0px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 1);
 }
-
 nav ul li {
-	float: left;
-	list-style: none;
-	position: relative;
-	text-align: center;
-	
-	
-	
+  float: left;
+  list-style: none;
+  position: relative;
+  text-align: center;
 }
 nav ul li a {
-	transition: all 0.3s ease 0s;
-	list-style: none;
-  	display: block;
-  	color: lavenderblush;
-  	padding: 19px 20px;
-  	text-decoration:none;
-	font-weight: bold;
-	font-size: 1.1em;
+  transition: all 0.3s ease 0s;
+  list-style: none;
+  display: block;
+  color: lavenderblush;
+  padding: 19px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
 }
-
-nav ul li ul{
-	
-	position: absolute;
-	padding: 10px;
-	border-style:none;
-	border-radius: 0px 0px 10px 10px;
-	background-color:rgba(50,50,50,1);
+nav ul li ul {
+  position: absolute;
+  padding: 10px 0px;
+  border-style: none;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(50, 50, 50, 1);
 }
 nav ul li ul li {
-	width: 200px;
+  width: 200px;
 }
 nav ul li ul li a {
-	padding: 8px 14px;
-	font-size: 1.1em;
-	font-weight: lighter;
+  padding: 8px 15px;
+  font-size: 1.1em;
+  font-weight: lighter;
 }
-
+nav ul li ul li ul {
+  position: absolute;
+  padding: 10px 0px;
+  border-style: none;
+  border-radius: 0px 0px 10px 10px;
+  background-color:rgba(50, 50, 50, 1);
+}
 nav ul.sub {
-	position: absolute;
-	display: none;
+  position: absolute;
+  display: none;
 }
-
-
-
-
+nav ul.sub li ul.sub {
+  top: -10px;
+  left: 200px;
+}
 /* Change color on hover */
 nav li a:hover {
-	
-  	background-color: #0088a9;
-  	color: black;
-	border-radius: 5px;
+  background-color: #0088a9;
+  color: black;
+  border-radius: 5px;
 }
-
+nav li a:hover span {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  right: 15px;
+  top: 13px;
+}
 /* Style the header */
 header {
-	
-	justify-content: space-between;
-	align-items: center;
-  	padding: 2px;
-	margin-bottom: 15px;
-  	text-align: center;
-	border: solid;
-	border-radius: 10px;
-	background-color:rgba(163,163,173,0.9);
-	
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgba(163, 163, 173, 0.9);
 }
-
 #panther {
-	float: left;
-	width: 8%;
-	opacity: 0.7;
-	border-radius: 5px;
-	
+  float: left;
+  width: 8%;
+  opacity: 0.7;
+  border-radius: 5px;
 }
-
 .cal {
-  	position: absolute;
-  	margin-left: auto;
-  	margin-right: auto;
-	border-radius: 10px;
-	
-	
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
-
 #container {
-	padding-bottom:56.25%; 
-	position:relative; 
-	display:block; 
-	width: 100%
+  padding-bottom: 56.25%;
+  position: relative;
+  display: block;
+  width: 100%
 }
-
 .email {
-	text-align: right;
-	
+  text-align: right;
 }
-
 h1 {
-	font-size: 3.5em;
-	cursor: pointer;
-		
+  font-size: 3.5em;
+  cursor: pointer;
 }
-
-
 p {
-	margin-top: 20px;
-	font-size: 1.2em;
-	background-color:lavenderblush;
-	padding-left: 7%;
-	padding-right: 7%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	text-align: justify;
-	border-radius: 10px;
-	border-style: solid;
-	
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: lavenderblush;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: justify;
+  border-radius: 10px;
+  border-style: solid;
 }
-
 .material-icons {
-	float: right
+  float: right
 }
-
-
-
-
-
-
-
+span {
+  position: absolute;
+  border: solid #fff0f5;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  right: 15px;
+  top: 13px;
+}
+.right {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
