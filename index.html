@@ -5,7 +5,6 @@
 <title>Mr. Brown's Website</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -16,7 +15,7 @@
 	  <!-------------------------- Math 9 Courses---------------------------->
     <li><a href="#">Math 9</a>
       <ul class="sub">
-          <li><a href="#">Calendar</a></li>
+          <li><a href="Courses/Math 9/Calendar.html" target="_blank">Calendar</a></li>
           <li><a href="#">Course Info</a></li>
           <li><a href="#"><strong>Unit 1</strong><br><small>Square Roots and Surface Area</small></a></li>
 		  <li><a href="#"><strong>Unit 2</strong> <br>Powers and Exponents</a></li>
@@ -158,7 +157,7 @@
 	
 	<!-------------------------- Calendar ---------------------------->
 	
-<div id="container">
+<div class="container">
   <iframe class="cal" src="https://calendar.google.com/calendar/embed?title=Mr.%20Brown&#39;s%20Classes&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wolfcreek.ab.ca_fbo0kvkttt8mg3ag3heaeejvck%40group.calendar.google.com&amp;color=%23A32929&amp;src=wolfcreek.ab.ca_052j16lv5patebmtfg18i9oino%40group.calendar.google.com&amp;color=%23B1440E&amp;src=wolfcreek.ab.ca_5tf30fko9kdlnek0oqd4b05dok%40group.calendar.google.com&amp;color=%230D7813&amp;src=wolfcreek.ab.ca_1qjnr0fkjsbik7k01gd4lhcvjg%40group.calendar.google.com&amp;color=%232952A3&amp;src=wolfcreek.ab.ca_gghbs4ek4ic56son5gbsg21j7g%40group.calendar.google.com&amp;color=%238C500B&amp;src=wolfcreek.ab.ca_n765ge7cp1490md9287bkeis3g%40group.calendar.google.com&amp;color=%23182C57&amp;src=wolfcreek.ab.ca_mr71oqmapotj2ommtfdntjv14k%40group.calendar.google.com&amp;color=%23711616&amp;src=wolfcreek.ab.ca_grmcqsiejcfjl1ugordjikbjc0%40group.calendar.google.com&amp;color=%2342104A&amp;src=wolfcreek.ab.ca_s9l6f2jf2r7vsmmvpn7luoupmk%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FEdmonton" style="border-width:0" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
 </div>
 </body>
@@ -178,12 +177,9 @@
 		$(function(){
         $(".main li").hover(
             function(){
-                //$('ul.sub', this).slideDown(500);
-                //$('>ul.sub', this).slideDown(500);
                 $('>ul.sub:not(:animated)', this).slideDown(500);
             },
             function(){
-                //$('ul.sub',this).slideUp(300);
                 $('>ul.sub',this).slideUp(300);
             }
         );
