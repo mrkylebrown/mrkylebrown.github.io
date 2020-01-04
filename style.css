@@ -17,6 +17,7 @@ nav {
   
 }
 nav ul {
+  z-index: 999;
   padding: 0px;
   margin: 0px;
   border-style: none;
@@ -105,41 +106,7 @@ nav li a:hover span {
 	
 }
 
-/* Mobile device Nav Bar*/
 
-@media screen and (max-width: 1045px) {
-	.main{
-		display: none;
-	}
-	
-	.burger{
-		float: right;
-		display: block;
-	
-	}
-	
-	.allCourses{
-		float: left;
-		position: relative;
-		right: 30px;
-		top: 18px;
-		list-style-type: none;
-		font-weight: bold;
-  		font-size: 1.1em;
-		color: lavender;
-		
-	
-	}
-	.allCoursesContainer{
-		display: block;
-		float: right;
-		align-content: center;
-		
-		
-		
-	}
-	
-}
 
 /* Style the header */
 header {
@@ -201,5 +168,79 @@ span {
 .right {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+/* Mobile device Nav Bar*/
+
+@media screen and (max-width: 1045px) {
+	.main{
+		
+	}
+	
+	.burger{
+		float: right;
+		display: block;
+	
+	}
+	
+	.allCourses{
+		float: left;
+		position: relative;
+		right: 30px;
+		top: 18px;
+		list-style-type: none;
+		font-weight: bold;
+  		font-size: 1.1em;
+		color: lavender;
+	}
+	
+	.allCoursesContainer{
+		display: block;
+		float: right;
+		align-content: center;	
+	}
+	
+	nav ul {
+		position: absolute;
+		right: 38px;
+		top: 61px;
+		width: 300px;
+		height: 100%;
+		background-color: rgba(50, 50, 50, 1);
+		display: block;
+		align-content: center;
+		
+	}
+	
+	nav ul li {
+		padding: 20px 50px;
+		width: 200px;
+	}
+	
+	nav ul li ul {
+  position: absolute;
+  right: 300px;
+  height:auto;
+  padding-top: 10px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: rgba(50, 50, 50, 1);
+}
+nav ul li ul li {
+  width: 200px;
+}
+nav ul li ul li a {
+  padding: 8px 15px;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+nav ul li ul li ul {
+  position: absolute;
+  padding: 0px 0px;
+  border-style: none;
+  border-radius: 5px;
+  background-color:rgba(50, 50, 50, 1);
+}
+	
 }
 
