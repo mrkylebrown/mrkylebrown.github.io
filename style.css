@@ -173,6 +173,9 @@ span {
 /* Mobile device Nav Bar*/
 
 @media screen and (max-width: 1045px) {
+	body {
+		width: 100%;
+	}
 	.main{
 		
 	}
