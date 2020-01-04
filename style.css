@@ -14,22 +14,21 @@ nav {
   border-style: solid;
   border-radius: 10px;
   margin-top: 10px;
+  
 }
 nav ul {
-  float: left;
-  position: absolute;
-  z-index: 999;
   padding: 0px;
   margin: 0px;
   border-style: none;
   border-radius: 10px;
   background-color: rgba(50, 50, 50, 1);
+	
 }
 nav ul li {
   float: left;
   list-style: none;
   position: relative;
-  text-align: center;
+
 }
 nav ul li a {
   transition: all 0.3s ease 0s;
@@ -40,6 +39,8 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
+	
+	
 }
 nav ul li ul {
   position: absolute;
@@ -85,6 +86,61 @@ nav li a:hover span {
   right: 15px;
   top: 13px;
 }
+
+.allCoursesContainer{
+	display: none;
+}
+
+/* style the Burger*/
+.burger{
+	padding: 15px;
+	cursor: pointer;
+	display: none;
+}
+.burger div {
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: lavenderblush;
+	
+}
+
+/* Mobile device Nav Bar*/
+
+@media screen and (max-width: 1045px) {
+	.main{
+		display: none;
+	}
+	
+	.burger{
+		float: right;
+		display: block;
+	
+	}
+	
+	.allCourses{
+		float: left;
+		position: relative;
+		right: 30px;
+		top: 18px;
+		list-style-type: none;
+		font-weight: bold;
+  		font-size: 1.1em;
+		color: lavender;
+		
+	
+	}
+	.allCoursesContainer{
+		display: block;
+		float: right;
+		align-content: center;
+		
+		
+		
+	}
+	
+}
+
 /* Style the header */
 header {
   padding: 2px;
@@ -109,14 +165,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  border-width:0; 
-  width=100%; 
-  height=700px; 
-  frameborder=0;
-  scroll-behavior: none;
 }
 .container {
   padding-bottom: 56.25%;
+  padding-top: 10px;
   position: relative;
   display: block;
   width: 100%
