@@ -209,7 +209,7 @@ span {
 		right: 0px;
 		top: 61px;
 		width: 300px;
-		height: 100%;
+		height:auto;
 		background-color: rgba(50, 50, 50, 1);
 		display: block;
 		align-content: center;
