@@ -175,6 +175,7 @@ span {
 @media screen and (max-width: 1045px) {
 	body {
 		width: 100%;
+		overflow-x: hidden;
 	}
 	.main{
 		
@@ -183,7 +184,6 @@ span {
 	.burger{
 		float: right;
 		display: block;
-	
 	}
 	
 	.allCourses{
@@ -204,30 +204,41 @@ span {
 	}
 	
 	nav ul {
+		
 		position: absolute;
-		right: 38px;
+		right: 0px;
 		top: 61px;
 		width: 300px;
 		height: 100%;
 		background-color: rgba(50, 50, 50, 1);
 		display: block;
 		align-content: center;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
 		
 	}
 	
 	nav ul li {
 		padding: 20px 50px;
 		width: 200px;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+	.grades {
+		opacity: 0%;
 	}
 	
 	nav ul li ul {
   position: absolute;
-  right: 300px;
+  right: 600px;
+  top: 19px;
   height:auto;
   padding-top: 10px;
   border-style: none;
   border-radius: 5px;
-  background-color: rgba(50, 50, 50, 1);
+  background-color:rgba(50,50,50,0.97);
 }
 nav ul li ul li {
   width: 200px;
@@ -245,5 +256,20 @@ nav ul li ul li ul {
   background-color:rgba(50, 50, 50, 1);
 }
 	
+.nav-active {
+	transform: translateX(0%);	
+	}	
+	
+}
+
+@keyframes navLinkFade {
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
