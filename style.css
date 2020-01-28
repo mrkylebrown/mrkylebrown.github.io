@@ -165,6 +165,14 @@ span {
   right: 15px;
   top: 13px;
 }
+nav li a:hover span {
+  border: solid black;
+  border-width: 0;
+  display: inline-block;
+  padding: 3px;
+  right: 15px;
+  top: 13px;
+}
 .right {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -232,8 +240,8 @@ span {
 	
 	nav ul li ul {
   position: absolute;
-  right: 600px;
-  top: 19px;
+  right: 500px;
+  top: 61px;
   height:auto;
   padding-top: 10px;
   border-style: none;
@@ -259,6 +267,13 @@ nav ul li ul li ul {
 .nav-active {
 	transform: translateX(0%);	
 	}	
+	
+ span {
+  position: absolute;
+  border: solid #fff0f5;
+  border-width: 0;
+  
+}
 	
 }
 
