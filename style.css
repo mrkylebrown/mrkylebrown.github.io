@@ -238,15 +238,15 @@ nav li a:hover span {
 		opacity: 0%;
 	}
 	
-	nav ul li ul {
+nav ul li ul {
   position: absolute;
-  right: 500px;
-  top: 61px;
+  
   height:auto;
   padding-top: 10px;
   border-style: none;
   border-radius: 5px;
   background-color:rgba(50,50,50,0.97);
+	
 }
 nav ul li ul li {
   width: 200px;
@@ -263,10 +263,17 @@ nav ul li ul li ul {
   border-radius: 5px;
   background-color:rgba(50, 50, 50, 1);
 }
-	
+	/* when screen is small slides the nav from off screen */
 .nav-active {
 	transform: translateX(0%);	
-	}	
+	}
+	/* when a grade is clicked, it slides of the screen */
+.nav-active2 {
+		transform: translateX(-80%);
+	}
+.nav-active3 {
+		transform: translateX(-160%);
+	}
 	
  span {
   position: absolute;
