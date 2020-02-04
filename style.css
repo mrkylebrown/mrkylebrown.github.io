@@ -195,12 +195,14 @@ span {
 		font-weight: bold;
   		font-size: 1.1em;
 		color: lavender;
+		z-index: 1;
 	}
 	
 	.allCoursesContainer{
 		display: block;
 		float: right;
 		align-content: center;	
+		z-index: 1;
 	}
 	
 	nav ul {
@@ -227,18 +229,19 @@ span {
 	}
 	
 	.grades {
-		opacity: 0%;
+		opacity: 0;
+		z-index: 1;
 	}
 	
 	nav ul li ul {
   position: absolute;
-  right: 600px;
+  right: 350px;
   top: 19px;
   height:auto;
   padding-top: 10px;
   border-style: none;
   border-radius: 5px;
-  background-color:rgba(50,50,50,0.97);
+  background-color:rgba(50,50,50,1);
 }
 nav ul li ul li {
   width: 200px;
