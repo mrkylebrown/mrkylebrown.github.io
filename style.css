@@ -165,6 +165,14 @@ span {
   right: 15px;
   top: 13px;
 }
+nav li a:hover span {
+  border: solid black;
+  border-width: 0;
+  display: inline-block;
+  padding: 3px;
+  right: 15px;
+  top: 13px;
+}
 .right {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -233,15 +241,24 @@ span {
 		z-index: 1;
 	}
 	
-	nav ul li ul {
+nav ul li ul {
   position: absolute;
+<<<<<<< HEAD
   right: 350px;
   top: 19px;
+=======
+  
+>>>>>>> origin/master
   height:auto;
   padding-top: 10px;
   border-style: none;
   border-radius: 5px;
+<<<<<<< HEAD
   background-color:rgba(50,50,50,1);
+=======
+  background-color:rgba(50,50,50,0.97);
+	
+>>>>>>> origin/master
 }
 nav ul li ul li {
   width: 200px;
@@ -258,10 +275,24 @@ nav ul li ul li ul {
   border-radius: 5px;
   background-color:rgba(50, 50, 50, 1);
 }
-	
+	/* when screen is small slides the nav from off screen */
 .nav-active {
 	transform: translateX(0%);	
-	}	
+	}
+	/* when a grade is clicked, it slides of the screen */
+.nav-active2 {
+		transform: translateX(-80%);
+	}
+.nav-active3 {
+		transform: translateX(-160%);
+	}
+	
+ span {
+  position: absolute;
+  border: solid #fff0f5;
+  border-width: 0;
+  
+}
 	
 }
 
