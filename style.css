@@ -240,7 +240,8 @@ nav li a:hover span {
 	
 nav ul li ul {
   position: absolute;
-  
+  right: 0px;
+top: 61px;
   height:auto;
   padding-top: 10px;
   border-style: none;
@@ -262,6 +263,7 @@ nav ul li ul li ul {
   border-style: none;
   border-radius: 5px;
   background-color:rgba(50, 50, 50, 1);
+
 }
 	/* when screen is small slides the nav from off screen */
 .nav-active {
