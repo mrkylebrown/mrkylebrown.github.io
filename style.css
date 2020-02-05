@@ -182,8 +182,7 @@ nav li a:hover span {
 
 @media screen and (max-width: 1045px) {
 	body {
-		width: 100%;
-		overflow-x: hidden;
+		
 	}
 	.main{
 		
@@ -241,19 +240,20 @@ nav li a:hover span {
 nav ul li ul {
   position: absolute;
   right: 0px;
-top: 61px;
+  top: 61px;
   height:auto;
   padding-top: 10px;
   border-style: none;
   border-radius: 5px;
-  background-color:rgba(50,50,50,0.97);
+  background-color:rgba(50,50,50,1);
 	
 }
 nav ul li ul li {
   width: 200px;
+  
 }
 nav ul li ul li a {
-  padding: 8px 15px;
+  padding: 20px 15px;
   font-size: 1.1em;
   font-weight: lighter;
 }
@@ -265,6 +265,18 @@ nav ul li ul li ul {
   background-color:rgba(50, 50, 50, 1);
 
 }
+	nav ul.sub {
+  position: absolute;
+  display: none;
+  top:-8px;
+  right: 20px;
+}	
+
+nav ul.sub li ul.sub {
+  top: -10px;
+  left: -8px;
+}
+	
 	/* when screen is small slides the nav from off screen */
 .nav-active {
 	transform: translateX(0%);	
@@ -274,7 +286,7 @@ nav ul li ul li ul {
 		transform: translateX(-80%);
 	}
 .nav-active3 {
-		transform: translateX(-160%);
+		transform: translateX(-180%);
 	}
 	
  span {
@@ -296,4 +308,6 @@ nav ul li ul li ul {
 		transform: translateX(0px);
 	}
 }
+
+
 
