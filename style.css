@@ -182,7 +182,7 @@ nav li a:hover span {
 
 @media screen and (max-width: 1045px) {
 	body {
-		
+		overflow-x: hidden;
 	}
 	.main{
 		
