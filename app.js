@@ -39,22 +39,6 @@ const navSlide = () => {
 navSlide();
 
 
-$("h1").on("click", function() {
-		$("h1").html("Mr. Brown's <i>New</i> Website!");
-	})
-
-// Nav Slide Down
-		$(function(){
-        $(".main li").hover(
-            function(){
-                $('>ul.sub:not(:animated)', this).slideDown(500);
-            },
-            function(){
-                $('>ul.sub',this).slideUp(300);
-            }
-        );
-    });
-
 
 	
 

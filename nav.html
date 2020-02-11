@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<nav>
+<nav id="navigationBar">
 	
   <ul class="main">
 	  <!-------------------------- Math 9 Courses---------------------------->
@@ -140,3 +140,28 @@
 		</div>
 	</div>
 </nav>
+
+	<!-------------------------- JavaScript ---------------------------->
+<script src="app.js"> </script>	
+<script src="jquery-3.4.1.min.js"></script>
+	<!-------------------------- Click Title---------------------------->
+<script>
+$("h1").on("click", function() {
+		console.log("Mr. Brown was clicked");
+		$("h1").html("Mr. Brown's <i>New</i> Website!");
+	})
+	</script>
+	<!-------------------------- Navigation Bar ---------------------------->
+<script>
+		$(function(){
+        $(".main li").hover(
+            function(){
+                $('>ul.sub:not(:animated)', this).slideDown(500);
+            },
+            function(){
+                $('>ul.sub',this).slideUp(300);
+            }
+        );
+    });
+	
+	</script>

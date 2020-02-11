@@ -5,13 +5,14 @@
 <title>Math 9 Calendar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="../../style.css" rel="stylesheet" type="text/css">
+  <link rel="import" href="../../nav.html">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 	
 	<!----Nav Bar---->
-	<div id= "nav-placeholder"></div>
-	
+	<div w3-include-html="../../nav.html"></div>
+
 
 	
 	<!----End Of Nav Bar---->
@@ -20,10 +21,11 @@
   <iframe class="cal" src="https://calendar.google.com/calendar/embed?src=wolfcreek.ab.ca_fbo0kvkttt8mg3ag3heaeejvck%40group.calendar.google.com&ctz=America%2FEdmonton" style="border-width:0" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
 </div>
 </body>
-	
-<script type="text/javascript">
-$(document).ready(function() {
-$('#nav-placeholder').load('nav.html');
-});
-</script>
+  <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    var el = content.querySelector('.navigationBar');
+    document.body.appendChild(el.cloneNode(true));
+  </script>	
+
 </html>
