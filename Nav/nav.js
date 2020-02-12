@@ -5,12 +5,12 @@ document.write( '<nav id=\"navigationBar\">\n' );
 
 document.write( '  <ul class=\"main\">\n' );
 	
-document.write( '    <li class=\"grades\"><a href="index.html">Home</a>\n' );
+document.write( '    <li class=\"grades\"><a href="../IndexFolder/index.html">Home</a>\n' );
 document.write( '	  <!-------------------------- Math 9 Courses---------------------------->\n' );
 	
 document.write( '    <li class=\"grades\"><a href=\"#\">Math 9</a>\n' );
 document.write( '      <ul class=\"sub\">\n' );
-document.write( '          <li><a href="www.mrkylebrown.weebly.com" target=\"_blank\">Calendar</a></li>\n' );
+document.write( '          <li><a href="../Math 9/calendar.html" target=\"_blank\">Calendar</a></li>\n' );
 document.write( '          <li><a href=\"#\">Course Info</a></li>\n' );
 document.write( '          <li><a href=\"#\"><strong>Unit 1</strong><br><small>Square Roots and Surface Area </small></a></li>\n' );
 document.write( '		  <li><a href=\"#\"><strong>Unit 2</strong> <br><small>Powers and Exponents</small></a></li>\n' );
