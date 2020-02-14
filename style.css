@@ -7,6 +7,107 @@ body {
   align-content: center;
   font-family: "montserrat"
 }
+
+h2 {
+	font-weight: bold;
+}
+
+.lessonBackground {
+  display: flex;
+  padding: 2px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgba(163, 163, 173, 0.95);
+}
+
+.column {
+	flex: 50%;
+  padding: 40px 10px;
+}
+
+.button {
+  background-color: rgba(59,60,63,1.00); 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 120px;
+}
+
+.button:hover {
+  background-color: #0088a9;
+  color: black;
+  border-radius: 5px;
+}
+
+.titlePic {
+	  
+    display: block;
+  	margin-right: auto;
+	margin-left: auto;
+  	width:90%;
+	vertical-align: middle;
+}
+
+/* Style the header */
+header {
+  padding: 2px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgba(163, 163, 173, 0.9);
+}
+#panther {
+  padding: 28px 10px;
+  float: left;
+  width: 8%;
+  opacity: 0.7;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+.cal {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.container {
+  padding-bottom: 56.25%;
+  padding-top: 10px;
+  position: relative;
+  display: block;
+  width: 100%
+}
+h1 {
+  font-size: 3.5em;
+  cursor: pointer; 
+}
+p {
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: lavenderblush;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: justify;
+  border-radius: 10px;
+  border-style: solid;
+}
 /* Style the top navigation bar */
 nav {
   height: 60px;
@@ -108,54 +209,7 @@ nav li a:hover span {
 
 
 
-/* Style the header */
-header {
-  padding: 2px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-align: center;
-  border: solid;
-  border-radius: 10px;
-  background-color: rgba(163, 163, 173, 0.9);
-}
-#panther {
-  padding: 28px 10px;
-  float: left;
-  width: 8%;
-  opacity: 0.7;
-  border-radius: 10px;
-  cursor: pointer;
-  z-index: 999;
-}
-.cal {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-}
-.container {
-  padding-bottom: 56.25%;
-  padding-top: 10px;
-  position: relative;
-  display: block;
-  width: 100%
-}
-h1 {
-  font-size: 3.5em;
-  cursor: pointer; 
-}
-p {
-  margin-top: 20px;
-  font-size: 1.2em;
-  background-color: lavenderblush;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  text-align: justify;
-  border-radius: 10px;
-  border-style: solid;
-}
+
 span {
   position: absolute;
   border: solid #fff0f5;
@@ -185,9 +239,29 @@ nav li a:hover span {
 		width: 100%;
 		overflow-x: hidden;
 	}
-	.main{
-		
-	}
+	
+	.lessonBackground {
+  display: block;
+}
+
+.column {
+	flex: 100%;
+  padding: 10px;
+}
+
+.button {
+  margin-bottom: 10px;
+}
+
+
+
+.titlePic {
+
+ margin: 0 auto;
+	max-width: 90%
+  
+}
+
 	
 	.burger{
 		float: right;
@@ -313,55 +387,4 @@ nav ul.sub li ul.sub {
 
 
 
-h2 {
-	font-weight: bold;
-}
 
-.lessonBackground {
-  display: flex;
-  padding: 2px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-align: center;
-  border: solid;
-  border-radius: 10px;
-  background-color: rgba(163, 163, 173, 0.95);
-}
-
-.column {
-	flex: 50%;
-  padding: 10px;
-}
-
-button {
-  background-color: rgba(59,60,63,1.00); /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-button:hover {
-  background-color: #0088a9;
-  color: black;
-  border-radius: 5px;
-}
-
-.titlePic {
-	  
-      display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-top: 25px;
-  
-}
