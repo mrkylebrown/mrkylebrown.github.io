@@ -10,17 +10,44 @@ body {
 
 h2 {
 	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+}
+
+.outcomes {
+	width: 70%;
+	margin: 0 auto;
+	list-style-type:square;
+	font-size: 18px;
 }
 
 .lessonBackground {
   display: flex;
   padding: 2px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-top: 8px;
   text-align: center;
   border: solid;
   border-radius: 10px;
-  background-color: rgba(163, 163, 173, 0.95);
+background: rgb(101,97,97);
+background: -moz-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: -webkit-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endColorstr="#cfc7c7",GradientType=1);
+}
+
+.divider{
+  height: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+background: rgb(43,82,255);
+background: -moz-linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
+background: -webkit-linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
+background: linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b52ff",endColorstr="#7a86b5",GradientType=1);
 }
 
 .column {
@@ -46,9 +73,21 @@ h2 {
 }
 
 .button:hover {
-  background-color: #0088a9;
+background: rgb(59,110,214);
+background: -moz-radial-gradient(circle, rgba(59,110,214,1) 0%, rgba(106,142,247,0.9700922605370274) 100%);
+background: -webkit-radial-gradient(circle, rgba(59,110,214,1) 0%, rgba(106,142,247,0.9700922605370274) 100%);
+background: radial-gradient(circle, rgba(59,110,214,1) 0%, rgba(106,142,247,0.9700922605370274) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b6ed6",endColorstr="#6a8ef7",GradientType=1);
   color: black;
   border-radius: 5px;
+font-weight: bold;
+}
+
+.unitTitle {
+	font-weight: bold;
+	font-size: 40px;
+	color: lavenderblush;
+	text-align: center;
 }
 
 .titlePic {
@@ -57,7 +96,7 @@ h2 {
   	margin-right: auto;
 	margin-left: auto;
   	width:90%;
-	vertical-align: middle;
+	border-radius: 15px;
 }
 
 /* Style the header */
@@ -68,7 +107,11 @@ header {
   text-align: center;
   border: solid;
   border-radius: 10px;
-  background-color: rgba(163, 163, 173, 0.9);
+background: rgb(43,82,255);
+background: -moz-linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
+background: -webkit-linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
+background: linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b52ff",endColorstr="#7a86b5",GradientType=1);
 }
 #panther {
   padding: 28px 10px;
@@ -176,9 +219,14 @@ nav ul.sub li ul.sub {
 }
 /* Change color on hover */
 nav li a:hover {
-  background-color: #0088a9;
-  color: black;
-  border-radius: 5px;
+background: rgb(59,110,214);
+background: -moz-radial-gradient(circle, rgba(59,110,214,1) 0%, rgba(106,142,247,0.9700922605370274) 100%);
+background: -webkit-radial-gradient(circle, rgba(59,110,214,1) 0%, rgba(106,142,247,0.9700922605370274) 100%);
+background: radial-gradient(circle, rgba(59,110,214,1) 0%, rgba(106,142,247,0.9700922605370274) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b6ed6",endColorstr="#6a8ef7",GradientType=1);
+color: black;
+border-radius: 5px;
+font-weight: bold;
 }
 nav li a:hover span {
   border: solid black;
@@ -384,7 +432,56 @@ nav ul.sub li ul.sub {
 	}
 }
 
+.lessonTitle {
+	text-align: center;
+	color: lavenderblush;
+}
+
+.Lesson {
+	border-radius: 15px;
+	background: rgb(101,97,97);
+background: -moz-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: -webkit-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endColorstr="#cfc7c7",GradientType=1); 
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: 100px 1fr;
+	grid-template-areas: 
+		"Title Title Title"
+		"Descr Buttons Videos"
+		"Descr Buttons Videos"
+}
+
+.LessonTitleBox {
+	grid-area: Title;
+	background: rgb(101,97,97);
+	border-radius: 15px 15px 5px 5px;
+	align-content: center;
+}
+
+.LessonDescription {
+	grid-area: Descr;
+	padding: 5%
+}
+
+.LessonButtons {
+	grid-area: Buttons;
+	padding: 5%
+}
+
+.LessonVideos {
+	grid-area: Videos;
+	padding: 5% 15%;
+}
 
 
 
 
+
+
+
+.outcomesli {
+	padding: 5px
+}

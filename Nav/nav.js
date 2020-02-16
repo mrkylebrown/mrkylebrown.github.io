@@ -12,7 +12,7 @@ document.write( '    <li class=\"grades\"><a href=\"#\">Math 9</a>\n' );
 document.write( '      <ul class=\"sub\">\n' );
 document.write( '          <li><a href="Ma9.Calendar.html" target=\"_blank\">Calendar</a></li>\n' );
 document.write( '          <li><a href=\"Ma9.info.html">Course Info</a></li>\n' );
-document.write( '          <li><a href=\"#\"><strong>Unit 1</strong><br><small>Square Roots and Surface Area </small></a></li>\n' );
+document.write( '          <li><a href=\"Ma9.Unit 1.html"><strong>Unit 1</strong><br><small>Square Roots and Surface Area </small></a></li>\n' );
 document.write( '		  <li><a href=\"#\"><strong>Unit 2</strong> <br><small>Powers and Exponents</small></a></li>\n' );
 document.write( '		  <li><a href=\"#\"><strong>Unit 3</strong> <br><small>Rational Numbers</small></a></li>\n' );
 document.write( '		  <li><a href=\"#\"><strong>Unit 4</strong> <br><small>Linear Relations</small></a></li>\n' );
