@@ -369,6 +369,9 @@ nav li a:hover span {
 	h2 {
 		font-size: 4vh;
 	}
+	h3 {
+	font-size: 2.5vh;
+	}
 	
 	.outcomesli {
 	padding: 2px;
@@ -378,11 +381,12 @@ nav li a:hover span {
 	.Lesson {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto auto;
+	grid-template-rows: auto auto auto auto;
 	grid-template-areas: 
 		"Title Title"
 		"Descr Buttons"
-		"Videos Videos";
+		"Videos Videos"
+		"Item Item";
 	}
 	
 .LessonDescription {
