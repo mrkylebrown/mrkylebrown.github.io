@@ -13,6 +13,11 @@ h2 {
 	font-size: 2.5vw;
 	text-align: center;
 }
+h3 {
+	font-weight: bold;
+	font-size: 1.5vw;
+	text-align: center;
+}
 
 .outcomes {
 	width: 70%;
@@ -42,7 +47,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endCo
   margin-top: 8px;
   text-align: center;
   border: solid;
-  border-radius: 10px;
+  border-radius: 5px;
 background: rgb(43,82,255);
 background: -moz-linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
 background: -webkit-linear-gradient(262deg, rgba(43,82,255,1) 0%, rgba(122,134,181,0.9202327327327328) 100%);
@@ -66,7 +71,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b52ff",endCo
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 0px auto;
   margin-top: 15px;
   margin-bottom: 30px;
   width: 120px;
@@ -114,16 +119,27 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endCo
 	
 	display: grid;
 	grid-template-columns: 1fr 1fr 2fr;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto auto auto;
 	grid-template-areas: 
 		"Title Title Title"
 		"Descr Buttons Videos"
+		"Item Item Item"
 		
 }
 
 .LessonTitleBox {
 	grid-area: Title;
 	background: rgb(101,97,97);
+	border-radius: 15px 15px 5px 5px;
+	align-content: center;
+}
+.QuizTitleBox {
+	grid-area: Title;
+	background: rgb(196,50,50);
+background: -moz-linear-gradient(262deg, rgba(196,50,50,1) 0%, rgba(191,150,153,0.9700922605370274) 100%);
+background: -webkit-linear-gradient(262deg, rgba(196,50,50,1) 0%, rgba(191,150,153,0.9700922605370274) 100%);
+background: linear-gradient(262deg, rgba(196,50,50,1) 0%, rgba(191,150,153,0.9700922605370274) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c43232",endColorstr="#bf9699",GradientType=1);
 	border-radius: 15px 15px 5px 5px;
 	align-content: center;
 }
@@ -146,6 +162,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endCo
 	flex-direction: column;
 	justify-content: center;	
 }
+.Item {
+	grid-area: Item;
+}
 .outcomesli {
 	padding: 5px
 }
@@ -155,6 +174,7 @@ iframe {
 	height: 280px;
 	display: block;
 	margin: 15px 0;
+	border-radius: 20px;
 }
 
 /* Style the header */
@@ -182,8 +202,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b52ff",endCo
 }
 .cal {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  width:100%;
+  height: 800px;
   border-radius: 10px;
 }
 .container {
@@ -518,6 +538,7 @@ nav ul.sub li ul.sub {
 	height: 280px;
 	display: block;
 	margin: 15px 0;
+	border-radius: 12px;
 }
 }
 
@@ -531,4 +552,6 @@ nav ul.sub li ul.sub {
 		transform: translateX(0px);
 	}
 }
+
+
 
