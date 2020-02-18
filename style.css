@@ -10,7 +10,7 @@ body {
 
 h2 {
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 2.5vw;
 	text-align: center;
 }
 
@@ -97,6 +97,64 @@ font-weight: bold;
 	margin-left: auto;
   	width:90%;
 	border-radius: 15px;
+}
+/*Lesson Snippets*/
+.lessonTitle {
+	text-align: center;
+	color: lavenderblush;
+}
+
+.Lesson {
+	border-radius: 15px;
+	background: rgb(101,97,97);
+background: -moz-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: -webkit-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endColorstr="#cfc7c7",GradientType=1); 
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+		"Title Title Title"
+		"Descr Buttons Videos"
+		
+}
+
+.LessonTitleBox {
+	grid-area: Title;
+	background: rgb(101,97,97);
+	border-radius: 15px 15px 5px 5px;
+	align-content: center;
+}
+
+.LessonDescription {
+	grid-area: Descr;
+	padding: 4%;
+	
+}
+
+.LessonButtons {
+	grid-area: Buttons;
+	padding: 4%
+}
+
+.LessonVideos {
+	grid-area: Videos;
+	padding: 5% 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+.outcomesli {
+	padding: 5px
+}
+
+iframe {
+	width: 100%;
+	height: 280px;
+	display: block;
+	margin: 15px 0;
 }
 
 /* Style the header */
@@ -255,9 +313,6 @@ nav li a:hover span {
 	
 }
 
-
-
-
 span {
   position: absolute;
   border: solid #fff0f5;
@@ -280,7 +335,8 @@ nav li a:hover span {
   transform: rotate(-45deg);
 }
 
-/* Mobile device Nav Bar*/
+
+/* Tablet device Nav Bar*/
 
 @media screen and (max-width: 1045px) {
 	body {
@@ -288,20 +344,54 @@ nav li a:hover span {
 		overflow-x: hidden;
 	}
 	
+/*Lesson Grid*/
+	
+	h2 {
+		font-size: 4vh;
+	}
+	
+	.outcomesli {
+	padding: 2px;
+	font-size: 16px;
+}
+	
+	.Lesson {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+		"Title Title"
+		"Descr Buttons"
+		"Videos Videos";
+	}
+	
+.LessonDescription {
+	padding: 2%
+}
+
+.LessonButtons {
+	padding: 2% 0%;
+}
+iframe {
+	width: 100%;
+	height: 400px;
+	display: block;
+	margin: 15px 0;
+}
+
 	.lessonBackground {
   display: block;
 }
-
+	
+	
+	.button {
+  margin-bottom: 10px;
+}
+/*For Documents snippet. done with flex*/
 .column {
 	flex: 100%;
   padding: 10px;
 }
-
-.button {
-  margin-bottom: 10px;
-}
-
-
 
 .titlePic {
 
@@ -309,7 +399,8 @@ nav li a:hover span {
 	max-width: 90%
   
 }
-
+	
+	/*Nav Bar*/
 	
 	.burger{
 		float: right;
@@ -421,6 +512,15 @@ nav ul.sub li ul.sub {
 	
 }
 
+@media screen and (max-width: 600px) {
+	iframe {
+	width: 100%;
+	height: 280px;
+	display: block;
+	margin: 15px 0;
+}
+}
+
 @keyframes navLinkFade {
 	from{
 		opacity: 0;
@@ -432,56 +532,3 @@ nav ul.sub li ul.sub {
 	}
 }
 
-.lessonTitle {
-	text-align: center;
-	color: lavenderblush;
-}
-
-.Lesson {
-	border-radius: 15px;
-	background: rgb(101,97,97);
-background: -moz-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
-background: -webkit-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
-background: linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endColorstr="#cfc7c7",GradientType=1); 
-	
-	display: grid;
-	grid-template-columns: 1fr 1fr 2fr;
-	grid-template-rows: 100px 1fr;
-	grid-template-areas: 
-		"Title Title Title"
-		"Descr Buttons Videos"
-		"Descr Buttons Videos"
-}
-
-.LessonTitleBox {
-	grid-area: Title;
-	background: rgb(101,97,97);
-	border-radius: 15px 15px 5px 5px;
-	align-content: center;
-}
-
-.LessonDescription {
-	grid-area: Descr;
-	padding: 5%
-}
-
-.LessonButtons {
-	grid-area: Buttons;
-	padding: 5%
-}
-
-.LessonVideos {
-	grid-area: Videos;
-	padding: 5% 15%;
-}
-
-
-
-
-
-
-
-.outcomesli {
-	padding: 5px
-}
