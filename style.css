@@ -126,6 +126,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endCo
 		"Item Item Item"
 		
 }
+.Lesson3Vid {
+		border-radius: 15px;
+	background: rgb(101,97,97);
+background: -moz-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: -webkit-linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+background: linear-gradient(262deg, rgba(101,97,97,1) 0%, rgba(207,199,199,0.9442567567567568) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#656161",endColorstr="#cfc7c7",GradientType=1); 
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+		"Title Title Title Title Title"
+		"Descr Buttons Video1 Video2 Video3"
+		"Item Item Item Item Item"
+}
 
 .LessonTitleBox {
 	grid-area: Title;
@@ -161,6 +177,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c43232",endCo
 	display: flex;
 	flex-direction: column;
 	justify-content: center;	
+}
+.Video1 {
+	grid-area: Video1;
+	padding: 30px 10px;
+}
+.Video2 {
+	grid-area: Video2;
+	padding: 30px 10px;
+}
+.Video3 {
+	grid-area: Video3;
+	padding: 30px 10px;
 }
 .Item {
 	grid-area: Item;
@@ -388,6 +416,17 @@ nav li a:hover span {
 		"Videos Videos"
 		"Item Item";
 	}
+	.Lesson3Vid {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+		"Title Title Title"
+		"Descr Buttons Buttons"
+		"Video1 Video2 Video3"
+		"Item Item Item";
+}
 	
 .LessonDescription {
 	padding: 2%
@@ -398,7 +437,7 @@ nav li a:hover span {
 }
 iframe {
 	width: 100%;
-	height: 400px;
+	height: 35vw;
 	display: block;
 	margin: 15px 0;
 }
@@ -543,6 +582,27 @@ nav ul.sub li ul.sub {
 	display: block;
 	margin: 15px 0;
 	border-radius: 12px;
+}
+	.Lesson3Vid {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+		"Title Title"
+		"Descr Buttons"
+		"Video1 Video2"
+		"Video3 Video3"
+		"Item Item";
+}
+	.Video1 {
+	padding: 10px;
+}
+.Video2 {
+	padding: 10px;
+}
+.Video3 {
+	padding: 10px;
 }
 }
 
